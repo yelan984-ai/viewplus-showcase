@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="数智互动无线可视化熔点测定平台：融合智能仪器、嵌入式温控、计算机视觉与 AI 分析的个人软硬件项目。">
+  <meta name="theme-color" content="#071015">
+  <title>View+｜数智互动无线可视化熔点测定平台</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="privacy-crop.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="nav-shell">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">V+</span><span>VIEWPLUS / LAB SYSTEM</span></a>
+      <div class="nav-links">
+        <a href="#system">系统</a>
+        <a href="#engineering">工程</a>
+        <a href="#journey">历程</a>
+        <a class="nav-cta" href="#contact">项目说明</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="live-dot"></span> PERSONAL HARDWARE × SOFTWARE PROJECT</p>
+          <h1>让熔点实验<br><span>可见、可控、可分析</span></h1>
+          <p class="lead">一套融合智能仪器、嵌入式温控、计算机视觉与大模型分析的软硬件平台。从传感器到桌面端，从局域网协同到实验报告，完成完整工程闭环。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#system">查看系统全貌</a>
+            <a class="button secondary" href="#journey">浏览开发历程</a>
+          </div>
+          <dl class="metrics" aria-label="项目数字">
+            <div><dt>80</dt><dd>可追溯 Git 提交</dd></div>
+            <div><dt>3</dt><dd>软硬件交互端</dd></div>
+            <div><dt>6</dt><dd>本地视觉特征</dd></div>
+          </dl>
+        </div>
+        <div class="hero-visual reveal delay-1">
+          <div class="screen-frame">
+            <div class="screen-bar"><span></span><span></span><span></span><b>OPERATOR CONSOLE</b></div>
+            <img src="assets/operator-console-opt.jpg" alt="熔点测定平台操作端界面，展示实验画面、温度曲线和控制卡片">
+          </div>
+          <div class="status-chip chip-a"><span></span> PT100 ONLINE</div>
+          <div class="status-chip chip-b"><span></span> AI PIPELINE READY</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 / THE PROBLEM</p>
+        <h2>传统实验过程，缺少一条完整的数据链</h2>
+        <p>观察、控温、记录与判断往往彼此割裂。View+ 将实验画面、温度、控制状态和分析结果汇入同一套系统。</p>
+      </div>
+      <div class="problem-grid">
+        <article class="problem-card reveal"><span>OBSERVE</span><h3>现象难共享</h3><p>显微画面局限在单台设备，实验成员难以同步观察。</p></article>
+        <article class="problem-card reveal delay-1"><span>CONTROL</span><h3>过程难追溯</h3><p>温度、录像与操作缺少统一时间轴，不利于回看与复核。</p></article>
+        <article class="problem-card reveal delay-2"><span>ANALYZE</span><h3>结果依赖经验</h3><p>初熔与全熔判断需要经验，实验报告整理成本较高。</p></article>
+      </div>
+    </section>
+
+    <section class="system section" id="system">
+      <div class="section-head split reveal">
+        <div><p class="eyebrow">02 / ONE CONNECTED SYSTEM</p><h2>从物理世界到分析报告</h2></div>
+        <p>真实仪器、嵌入式固件、桌面应用、移动浏览器与 AI 分析协同工作，同时保留离线与异常降级能力。</p>
+      </div>
+      <div class="system-flow reveal">
+        <div class="flow-node"><small>SENSE</small><strong>PT100 + MAX31865</strong><span>实时温度采集</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node accent"><small>CONTROL</small><strong>ESP32-S3</strong><span>PID · 慢 PWM · 安全保护</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><small>CONNECT</small><strong>Python + WebSocket</strong><span>桌面端与局域网协同</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><small>REASON</small><strong>OpenCV + LLM</strong><span>结构化特征与报告</span></div>
+      </div>
+      <figure class="architecture reveal">
+        <img src="assets/system-architecture-opt.jpg" alt="平台系统架构图，展示硬件层、ESP32、操作端、用户端和 AI 分析的数据流">
+        <figcaption>系统总体架构｜硬件、固件、应用与 AI 四层协同</figcaption>
+      </figure>
+    </section>
+
+    <section class="interfaces section">
+      <div class="interface-grid">
+        <div class="phone-wrap reveal">
+          <div class="phone"><img src="assets/mobile-console-opt.jpg" alt="手机浏览器中的用户端界面"></div>
+        </div>
+        <div class="interface-copy reveal delay-1">
+          <p class="eyebrow">03 / MULTI-DEVICE EXPERIENCE</p>
+          <h2>一台仪器，多个观察视角</h2>
+          <p>操作端负责仪器控制、录像和分析；用户端通过局域网浏览器查看实时画面、温度曲线和实验状态，无需安装额外客户端。</p>
+          <ul class="check-list">
+            <li>桌面端统一控制与状态反馈</li>
+            <li>手机、平板与电脑浏览器访问</li>
+            <li>视频与温度数据同步记录</li>
+            <li>连接异常时自动降级和恢复</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="engineering section" id="engineering">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 / ENGINEERING DEPTH</p>
+        <h2>不止是界面，更是一套可交付系统</h2>
+      </div>
+      <div class="engineering-grid">
+        <article class="feature feature-wide reveal">
+          <div><span class="feature-no">01</span><h3>真实温控闭环</h3><p>ESP32-S3 驱动 MAX31865/PT100 采集与 SSR 加热执行，配合 PID、慢 PWM、看门狗、故障锁存和温升异常检测。</p></div>
+          <img src="assets/device-front-opt.jpg" alt="熔点测定平台整机前面板">
+        </article>
+        <article class="feature reveal"><span class="feature-no">02</span><h3>CV + LLM 分析</h3><p>OpenCV 抽取关键帧和6类视觉特征，再将结构化数据交给语言模型推理，降低对视觉模型的依赖。</p></article>
+        <article class="feature reveal delay-1"><span class="feature-no">03</span><h3>实验数据闭环</h3><p>录像、温度 CSV、历史回放、初熔/全熔判断与 Markdown 报告在同一工作流中完成。</p></article>
+        <article class="feature reveal"><span class="feature-no">04</span><h3>产品化交付</h3><p>覆盖配置隔离、凭据保护、测试脚本、部署文档、Windows 安装器与 SHA-256 校验。</p></article>
+        <article class="feature reveal delay-1"><span class="feature-no">05</span><h3>安全与降级</h3><p>硬件断线时软件端保持可用；敏感配置不进入仓库，安装版凭据由 Windows DPAPI 保护。</p></article>
+      </div>
+    </section>
+
+    <section class="journey section" id="journey">
+      <div class="section-head split reveal">
+        <div><p class="eyebrow">05 / BUILD JOURNEY</p><h2>从原型到完整交付</h2></div>
+        <p>提交历史保留了真实的技术取舍、现场问题与持续迭代，而不是一次性拼装的演示项目。</p>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><time>2026.02</time><div><h3>桌面端原型</h3><p>建立 pywebview 混合应用、摄像头采集和实验分析窗口。</p></div></li>
+        <li class="reveal"><time>2026.03</time><div><h3>分析链路重构</h3><p>由视觉大模型转向 OpenCV 特征 + 文本推理，加入实时曲线和报告导出。</p></div></li>
+        <li class="reveal"><time>2026.04</time><div><h3>嵌入式验证</h3><p>打通 ESP32-S3 开发、烧录、传感器和执行器方案。</p></div></li>
+        <li class="reveal"><time>2026.05</time><div><h3>软硬件闭环</h3><p>完成真实测温、PID 加热、双端 UI、故障保护和现场联调。</p></div></li>
+        <li class="reveal"><time>2026.09</time><div><h3>安装包工程化</h3><p>构建闭源 Windows 安装器、配置保护和可验证交付流程。</p></div></li>
+        <li class="reveal"><time>2026.11</time><div><h3>作品集发布</h3><p>整理开发历程，以脱敏公开页面呈现项目价值，源码继续保持私有。</p></div></li>
+      </ol>
+    </section>
+
+    <section class="stack section">
+      <p class="eyebrow reveal">TECH STACK</p>
+      <div class="stack-row reveal" aria-label="技术栈">
+        <span>Python</span><span>Flask</span><span>OpenCV</span><span>pywebview</span><span>WebSocket</span><span>ESP32-S3</span><span>PlatformIO</span><span>PID</span><span>Chart.js</span><span>Nuitka</span>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-panel reveal">
+        <p class="eyebrow">PRIVATE SOURCE · PUBLIC CASE STUDY</p>
+        <h2>完整工程，选择性公开</h2>
+        <p>该项目源代码、专利材料和原始实验数据保持私有。本页用于展示系统设计、工程能力和开发历程；代码审阅与运行演示可在沟通后按需提供。</p>
+        <div class="contact-meta"><span>个人独立项目</span><span>软硬件一体化</span><span>可提供现场演示</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>VIEW+ / MELTING POINT PLATFORM</span><span>© 2026 · PRIVATE SOURCE</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>

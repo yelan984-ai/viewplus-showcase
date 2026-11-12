@@ -1,0 +1,16 @@
+/* Crop the browser chrome from the public mobile screenshot. */
+.phone {
+  height: 560px;
+}
+
+.phone img {
+  width: 100%;
+  height: auto;
+  object-fit: initial;
+}
+
+@media (max-width: 900px) {
+  .phone {
+    height: 520px;
+  }
+}
